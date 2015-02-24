@@ -1,0 +1,17 @@
+{
+	"name": "r/Diablo Release Countdown",
+	"version": "0.4",
+	"description": "Adds a simple countdown to the sidebar underneath the release date.",
+	"icons": 
+		{
+			"128" : "Avatar1_128.jpg"
+		},
+	"content_scripts": [
+		{
+			"matches": ["http://*.reddit.com/r/Diablo/*","http://*.reddit.com/r/diablo/*", "http://*.reddit.com/r/diablo","http://*.reddit.com/r/Diablo"],
+			"css": ["jquery.countdown.css"],
+			"js": ["jquery-1.7.1.min.js","jquery.countdown.min.js","script.js"],
+			"run_at": "document_start"
+		}
+	]
+}
